@@ -54,7 +54,7 @@ pipeline:
                                     skipDryRun: false
                           - step:
                                 type: ShellScript
-                                name: New Test
+                                name: New Test Changes
                                 identifier: New_Test
                                 spec:
                                     shell: Bash
