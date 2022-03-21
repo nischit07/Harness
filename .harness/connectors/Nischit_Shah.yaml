@@ -1,0 +1,22 @@
+connector:
+  name: Nischit_Shah
+  identifier: Nischit_Shah
+  description:
+  orgIdentifier: default
+  projectIdentifier: nischitbootcamp
+  type: Github
+  spec:
+    url: https://github.com/nischit07
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: nischit07
+          tokenRef: nischit_secret
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: nischit_secret
+    executeOnDelegate: false
+    type: Repo
