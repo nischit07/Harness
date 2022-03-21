@@ -1,0 +1,22 @@
+connector:
+  name: Github
+  identifier: Github
+  description:
+  orgIdentifier: default
+  projectIdentifier: nischitbootcamp
+  type: Github
+  spec:
+    url: https://github.com/nischit07/Harness
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: nischit07
+          tokenRef: nischit_test
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: nischit_test
+    executeOnDelegate: false
+    type: Repo
